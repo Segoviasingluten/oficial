@@ -1,0 +1,991 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Segovia Sin Gluten · Asociación de celíacos de Segovia</title>
+<meta name="description" content="Asociación sin ánimo de lucro de Segovia. Información sobre la enfermedad celíaca, alimentación sin gluten, actividades y apoyo a personas celíacas y sus familias.">
+<!-- Vista previa al compartir (WhatsApp, Facebook, etc.).
+     Dirección actual: https://segoviasingluten.github.io/oficial/
+     Si cambia el dominio, actualizad las direcciones de abajo. "vista-previa.jpg" debe estar junto a index.html. -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Segovia Sin Gluten">
+<meta property="og:title" content="Segovia Sin Gluten · Asociación de celíacos de Segovia">
+<meta property="og:description" content="Juntos por una vida sin gluten. Información, actividades y apoyo para personas celíacas y sus familias en Segovia.">
+<meta property="og:url" content="https://segoviasingluten.github.io/oficial/">
+<meta property="og:image" content="https://segoviasingluten.github.io/oficial/vista-previa.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Logo de Segovia Sin Gluten">
+<meta property="og:locale" content="es_ES">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Segovia Sin Gluten · Asociación de celíacos de Segovia">
+<meta name="twitter:description" content="Juntos por una vida sin gluten. Información, actividades y apoyo para personas celíacas y sus familias en Segovia.">
+<meta name="twitter:image" content="https://segoviasingluten.github.io/oficial/vista-previa.jpg">
+<link rel="icon" type="image/png" sizes="48x48" href="data:image/png;base64,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">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<meta name="theme-color" content="#9D0E66">
+<!--
+  ============================================================
+  GUÍA RÁPIDA DE MANTENIMIENTO
+  ------------------------------------------------------------
+  · El LOGO ya va incluido dentro de este archivo.
+  · FOTOS: sustituye los bloques .ph (marcados con "FOTO") por
+    <img src="nombre.jpg" alt="..." style="border-radius:18px">.
+  · INSTAGRAM: ya conectado con Behold (feed HxvLLcl8tTn7m1o5umOv).
+    El diseño del feed se cambia desde behold.so, no aquí.
+  · FORMULARIO DE SOCIOS: ya enlazado al Google Form.
+  · FORMULARIO DE CONTACTO: botón "Formulario de contacto" (sección Contacto).
+  · NUEVO SOCIO COLABORADOR: copia una línea <div class="logo-box">.
+  Todo lo demás no necesita tocarse.
+  ============================================================
+-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Satisfy&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+  /* Tipografía Oilvare Base (de pago, Adam Ladd). Sube los archivos de la
+     licencia web a la carpeta "fonts/" con estos nombres. Mientras no estén,
+     se usa Nunito como sustituta. */
+  @font-face{
+    font-family:'Oilvare Base';
+    src:url('fonts/OilvareBase.woff2') format('woff2'),url('fonts/OilvareBase.woff') format('woff');
+    font-display:swap;
+  }
+  :root{
+    /* Colores oficiales del logo */
+    --magenta:#9D0E66;   /* G y "Segovia" */
+    --malva:#BD6E9E;     /* S */
+    --mostaza:#FFA111;   /* espiga */
+    --ciruela:#964776;   /* "Sin Gluten" */
+    /* Derivados */
+    --magenta-dark:#760A4C;
+    --rosa:#D7A8C5;
+    --rosa-claro:#F4E8EF;
+    --mostaza-claro:#FFE5BC;
+    --crema:#FCF9FB;
+    --texto:#3C1C2F;
+    --gris:#6C3355;
+    --verde:var(--ciruela);
+    --rojo:var(--magenta-dark);
+    --radio:18px;
+    --sombra:0 10px 30px rgba(157,14,102,.10);
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth;scroll-padding-top:80px}
+  body{font-family:'Oilvare Base','Nunito',system-ui,sans-serif;color:var(--texto);background:var(--crema);line-height:1.6;font-size:17px;overflow-x:hidden}
+  img{max-width:100%;display:block}
+  a{color:var(--magenta)}
+  .wrap{max-width:1120px;margin:0 auto;padding:0 20px}
+  section{padding:90px 0;position:relative}
+  .script{font-family:'Satisfy',cursive;font-weight:400}
+  h2{font-size:clamp(2.1rem,5vw,3.1rem);color:var(--magenta);line-height:1.1;margin-bottom:.4em}
+  h2 .script{display:block;color:var(--ciruela)}
+  .eyebrow{text-transform:uppercase;letter-spacing:.18em;font-size:.78rem;font-weight:800;color:var(--mostaza);margin-bottom:.6rem}
+  .lead{font-size:1.12rem;color:var(--gris);max-width:680px}
+  .center{text-align:center}
+  .center .lead{margin:0 auto}
+
+  /* Logo (incrustado) */
+  .logo{background:#fff url("logo.jpg") center/contain no-repeat;display:block}
+
+  /* Botones */
+  .btn{display:inline-flex;align-items:center;gap:.5rem;padding:14px 28px;border-radius:999px;font-weight:800;text-decoration:none;transition:transform .2s, box-shadow .2s, background .2s;font-size:1rem;border:0;cursor:pointer}
+  .btn:hover{transform:translateY(-2px)}
+  .btn svg{width:20px;height:20px}
+  .btn-primary{background:var(--magenta);color:#fff;box-shadow:0 8px 20px rgba(157,14,102,.3)}
+  .btn-primary:hover{background:var(--magenta-dark)}
+  .btn-ghost{background:#fff;color:var(--magenta);border:2px solid var(--rosa)}
+  .btn-mostaza{background:var(--mostaza);color:#4C3005}
+  .btn-wa{background:#25D366;color:#fff}
+
+  /* Cabecera */
+  header{position:sticky;top:0;z-index:50;background:rgba(252,249,251,.94);backdrop-filter:blur(10px);border-bottom:1px solid rgba(157,14,102,.08)}
+  .nav{display:flex;align-items:center;justify-content:space-between;height:72px}
+  .brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--magenta);font-weight:800;line-height:1.1}
+  .brand .logo{width:50px;height:50px;border-radius:50%;box-shadow:0 2px 8px rgba(0,0,0,.08);background-size:82%}
+  .brand small{display:block;font-weight:600;color:var(--gris);font-size:.75rem}
+  .menu{display:flex;gap:22px;list-style:none;align-items:center}
+  .menu a{text-decoration:none;color:var(--texto);font-weight:700;font-size:.93rem;white-space:nowrap}
+  .menu a:hover{color:var(--magenta)}
+  .menu .btn{padding:10px 20px;color:#fff}
+  .burger{display:none;background:none;border:0;cursor:pointer;width:44px;height:44px}
+  .burger span{display:block;height:3px;width:26px;background:var(--magenta);margin:5px auto;border-radius:3px}
+
+  /* Hero */
+  .hero{padding:60px 0 100px;overflow:hidden}
+  .hero .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:50px;align-items:center}
+  .hero h1{font-size:clamp(2.5rem,6vw,4.2rem);line-height:1.02;color:var(--magenta);margin-bottom:20px}
+  .hero h1 .script{color:var(--mostaza);font-size:1.15em;display:block}
+  .hero p{font-size:1.18rem;color:var(--gris);margin-bottom:30px;max-width:520px}
+  .ctas{display:flex;gap:14px;flex-wrap:wrap}
+  .quote{margin-top:36px;padding-left:18px;border-left:4px solid var(--rosa);font-style:italic;color:var(--magenta-dark);max-width:480px}
+  .hero-visual{position:relative;aspect-ratio:1/1;display:grid;place-items:center}
+  .hero-visual .logo{width:80%;aspect-ratio:1;border-radius:50%;box-shadow:var(--sombra);position:relative;z-index:2;background-size:66%}
+  .brush{position:absolute;background:var(--rosa);opacity:.4;border-radius:60% 40% 55% 45%/50% 60% 40% 50%}
+  .brush.b1{width:120%;height:26%;top:6%;left:-20%;transform:rotate(-14deg)}
+  .brush.b2{width:110%;height:22%;bottom:8%;right:-25%;transform:rotate(-14deg);background:var(--mostaza);opacity:.3}
+
+  /* Quiénes somos */
+  .about{background:#fff}
+  .about .wrap{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center}
+  .photo{position:relative;margin:0 14px 18px 0}
+  .photo::before{content:"";position:absolute;inset:18px -14px -18px 18px;border:3px solid var(--malva);border-radius:32px 32px 32px 8px;z-index:0}
+  .photo::after{content:"";position:absolute;width:46%;height:22%;left:-6%;top:-5%;background:var(--mostaza);opacity:.28;border-radius:60% 40% 55% 45%/50% 60% 40% 50%;transform:rotate(-12deg);z-index:0}
+  .photo img{position:relative;z-index:1;width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:32px 32px 32px 8px;box-shadow:var(--sombra)}
+  .ph{background:linear-gradient(135deg,var(--rosa-claro),#fff);border:2px dashed var(--rosa);border-radius:var(--radio);display:grid;place-items:center;color:var(--magenta);font-weight:700;text-align:center;padding:20px;min-height:320px}
+  .about .goal{margin-top:24px;background:var(--rosa-claro);border-radius:var(--radio);padding:22px 26px;color:var(--magenta-dark);font-weight:700;font-size:1.08rem}
+  .about .goal span{display:block;font-family:'Satisfy',cursive;font-size:1.6rem;color:var(--magenta);margin-bottom:2px}
+
+  /* La celiaquía */
+  .info-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:24px;margin-top:46px}
+  .info{background:#fff;border-radius:var(--radio);padding:32px;box-shadow:var(--sombra);position:relative;overflow:hidden}
+  .info::before{content:"";position:absolute;left:0;top:0;bottom:0;width:6px;background:var(--magenta)}
+  .info:nth-child(2)::before{background:var(--mostaza)}
+  .info:nth-child(3)::before{background:var(--malva)}
+  .info:nth-child(4)::before{background:var(--mostaza)}
+  .info h3{color:var(--magenta);font-size:1.3rem;margin-bottom:10px;display:flex;align-items:center;gap:12px}
+  .info h3 .ico{width:42px;height:42px;border-radius:12px;background:var(--rosa-claro);display:grid;place-items:center;flex-shrink:0}
+  .info h3 .ico svg{width:22px;height:22px;stroke:var(--magenta);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+  .info p{color:var(--gris);margin-bottom:10px}
+  .info p:last-child{margin-bottom:0}
+  .tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:6px}
+  .tags span{background:var(--mostaza-claro);color:#734808;font-weight:700;font-size:.85rem;padding:5px 12px;border-radius:999px}
+  .info ul{list-style:none}
+  .info li{padding-left:22px;position:relative;color:var(--gris);margin-bottom:8px}
+  .info li::before{content:"";position:absolute;left:0;top:9px;width:10px;height:10px;border-radius:50%;background:var(--rosa)}
+  .info li b{color:var(--texto)}
+  .note{margin-top:14px;font-size:.92rem;background:var(--crema);border-radius:12px;padding:12px 14px;color:var(--magenta-dark)}
+  .alert{margin-top:14px;display:flex;gap:10px;align-items:flex-start;background:#F8EEF4;border-radius:12px;padding:12px 14px;color:#760A4C;font-size:.95rem}
+  .alert svg{width:22px;height:22px;flex-shrink:0;stroke:#9D0E66;fill:none;stroke-width:2}
+
+
+  /* Fichas en carrusel horizontal guiado por el scroll */
+  .stack-scroll{position:relative;margin-top:30px}
+  .stack-sticky{position:sticky;top:84px;padding:20px 0 10px;z-index:1;overflow-x:clip;width:100vw;margin-left:calc(50% - 50vw)}
+  @media (max-width:560px){.stack .info{padding:22px 20px;font-size:15px}.stack .info h3{font-size:1.12rem}.stack .info li{margin-bottom:5px}.stack .note,.stack .alert{font-size:.85rem}}
+  .stack{position:relative;margin:0 auto}
+  .stack .info{position:absolute;left:50%;top:50%;width:min(600px,82vw);will-change:transform,opacity;transition:box-shadow .3s}
+  .stack .info.active{box-shadow:0 18px 44px rgba(157,14,102,.18)}
+  .stack-nav{display:flex;justify-content:center;gap:8px;margin-top:22px}
+  .stack-nav span{width:10px;height:10px;border-radius:50%;background:var(--rosa);opacity:.45;transition:.3s}
+  .stack-nav span.on{background:var(--magenta);opacity:1;width:28px;border-radius:999px}
+  .stack-hint{text-align:center;font-size:.82rem;color:var(--gris);opacity:.75;margin-top:8px}
+
+  /* Alimentos */
+  .food{background:#fff}
+  .food-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;margin-top:46px}
+  .fcard{border-radius:var(--radio);padding:28px 24px;background:var(--crema);border:2px solid transparent;position:relative}
+  .fcard .badge{display:inline-flex;align-items:center;gap:6px;font-size:.78rem;font-weight:800;text-transform:uppercase;letter-spacing:.08em;padding:5px 12px;border-radius:999px;margin-bottom:14px}
+  .fcard h3{font-size:1.25rem;margin-bottom:8px;color:var(--magenta)}
+  .fcard p{color:var(--gris);font-size:.96rem}
+  .fcard .ex{margin-top:12px;font-size:.88rem;color:var(--texto);font-weight:700}
+  .f-ok{border-color:#E5D1DD}.f-ok .badge{background:#F2E9EF;color:var(--verde)}
+  .f-warn{border-color:var(--mostaza-claro)}.f-warn .badge{background:var(--mostaza-claro);color:#805008}
+  .f-spec{border-color:var(--rosa-claro)}.f-spec .badge{background:var(--rosa-claro);color:var(--magenta)}
+  .f-no{border-color:#EBCFE0}.f-no .badge{background:#F5E7F0;color:var(--rojo)}
+
+  .symbols{margin-top:60px;display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:stretch}
+  .symbols .intro{grid-column:1/-1;text-align:center;max-width:620px;margin:0 auto 6px}
+  .symbols .intro h3{font-size:1.6rem;margin-bottom:8px;color:var(--magenta)}
+  .symbols .intro p{color:var(--gris)}
+  .sym{background:var(--crema);border-radius:var(--radio);padding:28px;display:flex;gap:20px;align-items:center}
+  .sym .mark{width:84px;height:84px;flex-shrink:0;border-radius:18px;background:#fff;display:grid;place-items:center;box-shadow:0 4px 14px rgba(0,0,0,.06)}
+  .sym .mark svg{width:56px;height:56px}
+  .sym h4{color:var(--magenta);font-size:1.1rem;margin-bottom:4px}
+  .sym p{color:var(--gris);font-size:.95rem}
+  .sym .ppm{display:inline-block;margin-top:8px;background:var(--mostaza);color:#4C3005;font-weight:800;padding:3px 12px;border-radius:999px;font-size:.88rem}
+
+  .cross{margin-top:50px;display:grid;grid-template-columns:1fr 1fr;gap:24px}
+  .nocont{background:linear-gradient(135deg,var(--magenta),var(--magenta-dark));color:#fff;border-radius:var(--radio);padding:36px;display:flex;flex-direction:column;justify-content:center}
+  .nocont .script{font-size:3rem;line-height:1;margin-bottom:12px}
+  .nocont p{opacity:.92}
+  .tips{background:var(--crema);border-radius:var(--radio);padding:32px}
+  .tips h3{color:var(--magenta);margin-bottom:14px;font-size:1.2rem}
+  .tips ul{list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:10px 18px}
+  .tips li{padding-left:26px;position:relative;color:var(--gris);font-size:.96rem}
+  .tips li::before{content:"✓";position:absolute;left:0;top:0;color:var(--magenta);font-weight:800}
+
+  /* Lo que hacemos */
+  .grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:22px;margin-top:40px}
+  .card{background:#fff;border-radius:var(--radio);padding:30px 26px;box-shadow:var(--sombra);border-top:5px solid var(--rosa);transition:transform .25s}
+  .card:hover{transform:translateY(-6px)}
+  .card:nth-child(2){border-top-color:var(--mostaza)}
+  .card:nth-child(3){border-top-color:var(--magenta)}
+  .card:nth-child(4){border-top-color:var(--mostaza)}
+  .icon{width:56px;height:56px;border-radius:16px;background:var(--rosa-claro);display:grid;place-items:center;margin-bottom:18px}
+  .icon svg{width:28px;height:28px;stroke:var(--magenta);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+  .card h3{color:var(--magenta);font-size:1.15rem;margin-bottom:8px}
+  .card p{color:var(--gris);font-size:.95rem}
+
+  /* Novedades */
+  .news{background:var(--rosa-claro)}
+  .news-head{display:flex;justify-content:space-between;align-items:end;gap:20px;flex-wrap:wrap;margin-bottom:34px}
+  .feed{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+  .feed .ph{min-height:0;aspect-ratio:1;font-size:.9rem;background:#fff}
+  .feed-widget{border-radius:var(--radio);overflow:hidden;min-height:120px}
+
+  /* Socios */
+  .join .box{background:linear-gradient(135deg,var(--magenta),var(--magenta-dark));border-radius:28px;color:#fff;padding:60px;display:grid;grid-template-columns:1.2fr .8fr;gap:40px;align-items:center;overflow:hidden}
+  .join h2{color:#fff}
+  .join h2 .script{color:var(--mostaza)}
+  .join ul{list-style:none;margin:20px 0 30px}
+  .join li{padding-left:30px;position:relative;margin-bottom:10px}
+  .join li::before{content:"";position:absolute;left:0;top:7px;width:16px;height:16px;border-radius:50%;background:var(--mostaza)}
+  .join .badge-box{background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.25);border-radius:22px;padding:30px;text-align:center}
+  .join .badge-box .script{font-size:2.4rem;color:var(--mostaza);line-height:1.1}
+
+  /* Colaboradores */
+  .partners{text-align:center}
+  .marquee{margin-top:36px;overflow-x:auto;overflow-y:hidden;scrollbar-width:none;-webkit-mask:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent);mask:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent);padding:6px 0 12px}
+  .marquee::-webkit-scrollbar{display:none}
+  .marquee-track{display:flex;gap:14px;list-style:none;width:max-content}
+  .marquee .logo-box{flex:0 0 auto;padding:10px 26px;white-space:nowrap}
+  .marquee-hint{font-size:.82rem;color:var(--gris);opacity:.7;margin-top:6px}
+  @media (hover:none){.marquee-hint{display:none}}
+  .logo-box{background:#fff;border-radius:14px;min-height:76px;border-bottom:3px solid var(--rosa-claro);display:grid;place-items:center;font-weight:800;color:var(--gris);box-shadow:0 4px 14px rgba(0,0,0,.05);font-size:.92rem;padding:10px}
+  .logo-box.main{color:var(--magenta)}
+  .friends{margin-top:20px;display:flex;justify-content:center;gap:12px;flex-wrap:wrap}
+  .friends span{background:#fff;border:2px solid var(--mostaza);color:var(--magenta);padding:8px 16px;border-radius:999px;font-weight:700;font-size:.9rem}
+
+  /* Contacto */
+  .contact{background:#fff}
+  .contact .wrap{max-width:760px}
+  .clist{list-style:none;margin:24px 0 28px}
+  .clist li{display:flex;gap:14px;align-items:center;margin-bottom:18px}
+  .clist .icon{margin:0;flex-shrink:0;width:48px;height:48px}
+  .clist a{text-decoration:none;font-weight:700;word-break:break-word}
+  .clist small{display:block;color:var(--gris);font-weight:600}
+  .socials{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+  .follow{margin-top:40px;text-align:center}
+  .follow .social{background:#fff;text-align:left;display:flex;align-items:center;gap:14px}
+  .follow .social b{margin:0}
+  .follow .social > div{min-width:0}
+  .follow .social span:not(.app){display:block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+  .app{width:48px;height:48px;border-radius:14px;display:grid;place-items:center;flex-shrink:0;box-shadow:0 4px 10px rgba(0,0,0,.12)}
+  .app-icon{width:52px;height:52px;flex-shrink:0;border-radius:50%;object-fit:contain;box-shadow:0 4px 10px rgba(0,0,0,.12)}
+  .social{background:var(--crema);border-radius:var(--radio);padding:24px;text-decoration:none;color:var(--texto);transition:.25s;border:2px solid transparent}
+  .social:hover{border-color:var(--rosa);transform:translateY(-4px)}
+  .social svg{width:32px;height:32px;margin-bottom:10px;stroke:var(--magenta);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+  .social b{display:block;color:var(--magenta);font-size:1.05rem}
+  .social span{color:var(--gris);font-size:.88rem}
+
+  footer{background:var(--texto);color:rgba(255,255,255,.75);padding:40px 0;font-size:.9rem}
+  footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;align-items:center}
+  footer a{color:rgba(255,255,255,.85);text-decoration:none;margin-left:18px}
+  footer a:hover{color:#fff}
+
+  /* WhatsApp flotante */
+  .wa-float{position:fixed;right:20px;bottom:20px;z-index:60;width:58px;height:58px;border-radius:50%;background:#25D366;display:grid;place-items:center;box-shadow:0 8px 24px rgba(0,0,0,.2);transition:transform .2s}
+  .wa-float:hover{transform:scale(1.08)}
+  .wa-float svg{width:30px;height:30px;fill:#fff}
+
+
+  /* ===== Cursor espiga =====
+     Rosa sobre fondos claros, amarillo sobre fondos magenta. */
+  :root{
+    --cursor-rosa:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 32 32'%3E%3Cg transform='rotate%28-45 16 16%29' fill='%23BD6E9E' stroke='%23FFFFFF' stroke-width='1.2'%3E%3Cpath d='M16 8V30' fill='none' stroke='%23FFFFFF' stroke-width='3.6' stroke-linecap='round'/%3E%3Cpath d='M16 8V30' fill='none' stroke='%23BD6E9E' stroke-width='1.6' stroke-linecap='round'/%3E%3Cellipse cx='16' cy='5' rx='2.3' ry='3.7' transform='rotate%280 16 5%29'/%3E%3Cellipse cx='12.3' cy='10.5' rx='2.4' ry='4' transform='rotate%28-28 12.3 10.5%29'/%3E%3Cellipse cx='19.7' cy='10.5' rx='2.4' ry='4' transform='rotate%2828 19.7 10.5%29'/%3E%3Cellipse cx='12.3' cy='16.5' rx='2.4' ry='4' transform='rotate%28-28 12.3 16.5%29'/%3E%3Cellipse cx='19.7' cy='16.5' rx='2.4' ry='4' transform='rotate%2828 19.7 16.5%29'/%3E%3Cellipse cx='12.8' cy='22' rx='2' ry='3.4' transform='rotate%28-28 12.8 22%29'/%3E%3Cellipse cx='19.2' cy='22' rx='2' ry='3.4' transform='rotate%2828 19.2 22%29'/%3E%3C/g%3E%3C/svg%3E") 6 6;
+    --cursor-amarillo:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 32 32'%3E%3Cg transform='rotate%28-45 16 16%29' fill='%23FFA111' stroke='%23760A4C' stroke-width='1.2'%3E%3Cpath d='M16 8V30' fill='none' stroke='%23760A4C' stroke-width='3.6' stroke-linecap='round'/%3E%3Cpath d='M16 8V30' fill='none' stroke='%23FFA111' stroke-width='1.6' stroke-linecap='round'/%3E%3Cellipse cx='16' cy='5' rx='2.3' ry='3.7' transform='rotate%280 16 5%29'/%3E%3Cellipse cx='12.3' cy='10.5' rx='2.4' ry='4' transform='rotate%28-28 12.3 10.5%29'/%3E%3Cellipse cx='19.7' cy='10.5' rx='2.4' ry='4' transform='rotate%2828 19.7 10.5%29'/%3E%3Cellipse cx='12.3' cy='16.5' rx='2.4' ry='4' transform='rotate%28-28 12.3 16.5%29'/%3E%3Cellipse cx='19.7' cy='16.5' rx='2.4' ry='4' transform='rotate%2828 19.7 16.5%29'/%3E%3Cellipse cx='12.8' cy='22' rx='2' ry='3.4' transform='rotate%28-28 12.8 22%29'/%3E%3Cellipse cx='19.2' cy='22' rx='2' ry='3.4' transform='rotate%2828 19.2 22%29'/%3E%3C/g%3E%3C/svg%3E") 6 6;
+  }
+  @media (hover:hover) and (pointer:fine){
+    html,body{cursor:var(--cursor-rosa),auto}
+    a,button,.btn,label,summary{cursor:var(--cursor-rosa),pointer}
+    /* Zonas con fondo oscuro → espiga amarilla */
+    .join .box,.join .box *,
+    .nocont,.nocont *,
+    footer,footer *,
+    .btn-primary,.btn-primary *,
+    .menu .btn{cursor:var(--cursor-amarillo),pointer}
+    .join .box,.nocont,footer{cursor:var(--cursor-amarillo),auto}
+  }
+
+  /* Animación entrada */
+  .reveal{opacity:0;transform:translateY(24px);transition:opacity .7s, transform .7s}
+  .reveal.in{opacity:1;transform:none}
+
+  /* Responsive */
+  @media (max-width:1000px){
+    .food-grid{grid-template-columns:1fr 1fr}
+    .symbols{grid-template-columns:1fr}
+  }
+  @media (max-width:960px){
+    .hero .wrap,.about .wrap,.join .box,.cross{grid-template-columns:1fr}
+    .hero-visual{max-width:360px;margin:0 auto;order:-1}
+    .info-grid{grid-template-columns:1fr}
+    .grid4{grid-template-columns:1fr 1fr}
+    .socials{grid-template-columns:1fr 1fr}
+    .join .box{padding:40px 28px}
+  }
+  @media (max-width:1100px){
+    .burger{display:block}
+    .menu{position:fixed;inset:72px 0 auto 0;background:var(--crema);flex-direction:column;padding:24px;gap:18px;box-shadow:0 20px 30px rgba(0,0,0,.08);transform:translateY(-130%);transition:transform .35s}
+    .menu.open{transform:none}
+  }
+  @media (max-width:560px){
+    section{padding:64px 0}
+    .grid4,.food-grid,.tips ul{grid-template-columns:1fr}
+    .feed{grid-template-columns:1fr 1fr}
+    .logo-box{font-size:.85rem;min-height:64px}
+    .socials{grid-template-columns:1fr}
+    .sym{flex-direction:column;text-align:center}
+    .info{padding:26px 22px}
+    footer .wrap{flex-direction:column;text-align:center}
+    footer a{margin:0 9px}
+  }
+
+  /* ===== Separación visual de secciones =====
+     Cada sección es una "hoja" con esquinas redondeadas que se superpone a la anterior,
+     y alterna fondos derivados de los colores del logo. */
+  section{border-radius:48px 48px 0 0;margin-top:-48px;padding-top:120px;box-shadow:0 -12px 30px rgba(157,14,102,.07)}
+  section.hero{margin-top:0;border-radius:0;box-shadow:none;padding-top:60px}
+  .hero{background:var(--crema)}
+  .about{background:#fff}
+  #celiaquia{background:var(--rosa-claro)}
+  .food{background:#fff}
+  .activities{background:#FFF6E7}
+  .news{background:#EEDBE7}
+  .join{background:#fff}
+  .partners{background:#FFF6E7}
+  .contact{background:linear-gradient(135deg,var(--magenta),var(--magenta-dark));color:#fff;padding-bottom:140px}
+  footer{margin-top:-48px;padding-top:88px;position:relative}
+  /* Etiqueta de sección con espiga */
+  .eyebrow{display:inline-flex;align-items:center;gap:8px}
+  :root{--espiga:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M12 22V8' stroke='black' stroke-width='1.8' stroke-linecap='round'/%3E%3Cellipse cx='12' cy='4' rx='1.8' ry='3'/%3E%3Cellipse cx='9' cy='8.5' rx='1.9' ry='3.2' transform='rotate(-28 9 8.5)'/%3E%3Cellipse cx='15' cy='8.5' rx='1.9' ry='3.2' transform='rotate(28 15 8.5)'/%3E%3Cellipse cx='9' cy='13.5' rx='1.9' ry='3.2' transform='rotate(-28 9 13.5)'/%3E%3Cellipse cx='15' cy='13.5' rx='1.9' ry='3.2' transform='rotate(28 15 13.5)'/%3E%3C/svg%3E")}
+  .center .eyebrow{justify-content:center}
+  /* Contacto sobre magenta */
+  .contact h2{color:#fff}
+  .contact h2 .script{color:var(--mostaza)}
+  .contact .lead{color:rgba(255,255,255,.88)}
+  .contact .eyebrow{color:var(--mostaza)}
+  .contact .clist .icon{background:rgba(255,255,255,.14)}
+  .contact .clist .icon svg{stroke:#fff}
+  .contact .clist a{color:#fff}
+  .contact .clist small{color:var(--rosa)}
+  .contact .btn-primary{background:#fff;color:var(--magenta);box-shadow:0 8px 20px rgba(0,0,0,.18)}
+  .contact .btn-primary svg{stroke:var(--magenta)}
+  @media (max-width:560px){
+    section{border-radius:32px 32px 0 0;margin-top:-32px;padding-top:88px}
+    footer{margin-top:-32px;padding-top:72px}
+  }
+  @media (hover:hover) and (pointer:fine){
+    .contact,.contact *{cursor:var(--cursor-amarillo),auto}
+    .contact a,.contact a *{cursor:var(--cursor-amarillo),pointer}
+  }
+
+  /* Botones de redes compactos */
+  .follow .socials{display:flex;flex-wrap:wrap;justify-content:center;gap:10px}
+  .follow .social{flex:0 0 auto;padding:6px 16px 6px 6px;border-radius:999px;gap:10px;min-width:0;border-width:1px}
+  .follow .social:hover{transform:translateY(-2px)}
+  .follow .app-icon{width:30px;height:30px;box-shadow:none}
+  .follow .social b{font-size:.92rem}
+  .follow .social span:not(.app){display:none}
+
+  /* Gracias: tres apartados */
+  .partners h2.thanks{font-size:clamp(3.4rem,9vw,5.4rem);margin-bottom:.15em}
+  .partners h2.thanks .script{display:inline;color:var(--magenta)}
+  .sub-title{display:flex;align-items:center;justify-content:center;gap:14px;margin:56px auto 0;color:var(--ciruela);font-size:1.15rem;font-weight:800;text-transform:uppercase;letter-spacing:.12em;max-width:640px}
+  .sub-title::before,.sub-title::after{content:"";flex:1;height:2px;background:linear-gradient(90deg,transparent,var(--rosa))}
+  .sub-title::after{background:linear-gradient(90deg,var(--rosa),transparent)}
+  .partners .friends{margin-top:22px}
+  .partners .marquee{margin-top:22px}
+  /* Contacto centrado */
+  .contact .wrap{max-width:760px;text-align:center}
+  .contact .eyebrow{justify-content:center}
+  .contact .lead{margin:0 auto}
+  .contact .clist{display:inline-flex;flex-direction:column;align-items:flex-start;text-align:left;margin-left:auto;margin-right:auto}
+  .contact .ctas{justify-content:center}
+
+  .alert{flex-direction:column;align-items:center;text-align:center;gap:6px;margin-top:34px;padding:18px 20px}
+  .alert .emoji{font-size:1.8rem;line-height:1}
+  .stack .info{display:flex;flex-direction:column}
+  .stack .info .alert{margin-top:auto}
+  .tags{justify-content:center}
+  footer .wrap{flex-direction:column;justify-content:center;text-align:center;gap:10px}
+  footer nav a{margin:0 9px}
+
+  .stack .info:nth-child(3n+1)::before{background:var(--magenta)}
+  .stack .info:nth-child(3n+2)::before{background:var(--mostaza)}
+  .stack .info:nth-child(3n)::before{background:var(--malva)}
+
+
+  /* Textos legales (ventanas) */
+  dialog.legal{margin:auto;border:0;border-radius:24px;padding:40px 36px;max-width:760px;width:calc(100% - 32px);max-height:85vh;overflow:auto;color:var(--texto);box-shadow:0 30px 80px rgba(60,28,47,.35)}
+  dialog.legal::backdrop{background:rgba(60,28,47,.55);backdrop-filter:blur(3px)}
+  dialog.legal h2{font-size:2rem;margin-bottom:4px}
+  dialog.legal h3{color:var(--magenta);font-size:1.05rem;margin:22px 0 6px}
+  dialog.legal p,dialog.legal li{font-size:.95rem;color:var(--gris);margin-bottom:8px}
+  dialog.legal ul{padding-left:20px}
+  dialog.legal b{color:var(--texto)}
+  .legal-date{font-size:.82rem!important;opacity:.8}
+  .legal-close{position:sticky;top:0;float:right;margin:-20px -16px 0 0;width:40px;height:40px;border-radius:50%;border:0;background:var(--rosa-claro);color:var(--magenta);font-size:1.6rem;line-height:1;cursor:pointer}
+  @media (max-width:560px){dialog.legal{padding:28px 20px}}
+</style>
+</head>
+<body>
+
+<!-- ========== CABECERA ========== -->
+<header>
+  <div class="wrap nav">
+    <a href="#inicio" class="brand">
+      <span class="logo" role="img" aria-label="Logo Segovia Sin Gluten"></span>
+      <div>Segovia Sin Gluten<small>Asociación sin ánimo de lucro</small></div>
+    </a>
+    <button class="burger" aria-label="Abrir menú" onclick="document.querySelector('.menu').classList.toggle('open')"><span></span><span></span><span></span></button>
+    <ul class="menu" onclick="if(event.target.tagName==='A')this.classList.remove('open')">
+      <li><a href="#nosotros">Quiénes somos</a></li>
+      <li><a href="#celiaquia">La celiaquía</a></li>
+      <li><a href="#alimentos">¿Qué puedo comer?</a></li>
+      <li><a href="#actividades">Qué hacemos</a></li>
+      <li><a href="#novedades">Novedades</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+      <li><a href="#socios" class="btn btn-primary">Hazte socio</a></li>
+    </ul>
+  </div>
+</header>
+
+<!-- ========== PORTADA ========== -->
+<section class="hero" id="inicio">
+  <div class="wrap">
+    <div class="reveal">
+      <p class="eyebrow">Asociación de celíacos de Segovia</p>
+      <h1>Juntos por una vida <span class="script">sin gluten</span></h1>
+      <p>Informamos y orientamos a las personas que necesitan una dieta sin gluten y a su entorno. Y trabajamos para dar visibilidad a la enfermedad celíaca en Segovia.</p>
+      <div class="ctas">
+        <a href="#celiaquia" class="btn btn-primary">Información sobre la celiaquía</a>
+        <a href="https://wa.me/34604915177" target="_blank" rel="noopener" class="btn btn-ghost">Escríbenos por WhatsApp</a>
+      </div>
+      <p class="quote">“Unirse es el inicio, perdurar el progreso y trabajar juntos, el éxito.”</p>
+    </div>
+    <div class="hero-visual reveal">
+      <div class="brush b1"></div>
+      <div class="brush b2"></div>
+      <span class="logo" role="img" aria-label="Segovia Sin Gluten"></span>
+    </div>
+  </div>
+</section>
+
+<!-- ========== QUIÉNES SOMOS ========== -->
+<section class="about" id="nosotros">
+  <div class="wrap">
+    <figure class="photo reveal">
+      <img src="grupo.jpg" alt="Socias de Segovia Sin Gluten en una cena de la asociación" loading="lazy">
+    </figure>
+    <div class="reveal">
+      <p class="eyebrow">Quiénes somos</p>
+      <h2>Un grupo de autoayuda <span class="script">que suma desde la experiencia</span></h2>
+      <p class="lead">Somos una asociación sin ánimo de lucro y un grupo proactivo de autoayuda. Nos dedicamos a informar y orientar a las personas que precisan una dieta sin gluten y a su entorno. Desde nuestra propia experiencia queremos dar visibilidad a este colectivo.</p>
+      <div class="goal"><span>Nuestro objetivo</span>Visibilizar y crear conciencia social ante la enfermedad celíaca.</div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== LA CELIAQUÍA ========== -->
+<section id="celiaquia">
+  <div class="wrap">
+    <div class="center reveal">
+      <p class="eyebrow">La enfermedad celíaca</p>
+      <h2>Todo lo que necesitas saber <span class="script">para empezar</span></h2>
+      <p class="lead">Si a ti o a alguien cercano le acaban de diagnosticar, empieza por aquí. Y si te queda cualquier duda, escríbenos.</p>
+    </div>
+
+    <div class="stack-scroll">
+      <div class="stack-sticky">
+        <div class="stack">
+      <article class="info">
+        <h3>¿Qué es?</h3>
+        <p>Es una enfermedad <b>autoinmune, crónica y multisistémica</b>. La produce la ingesta de gluten, una proteína presente en estos cereales:</p>
+        <div class="tags"><span>Trigo</span><span>Cebada</span><span>Centeno</span><span>Espelta</span><span>Triticale</span><span>Avena no certificada</span></div>
+        <p style="margin-top:14px">Daña el intestino delgado y altera la absorción de vitaminas, minerales y nutrientes. Además, tiene un importante componente genético.</p>
+      </article>
+      <article class="info">
+        <h3>¿Qué síntomas produce?</h3>
+        <ul>
+          <li>Digestivos: diarrea, estreñimiento, dolor abdominal, gases, náuseas y vómitos.</li>
+          <li>Pérdida de apetito, retraso del crecimiento y anemia.</li>
+          <li>Dermatitis y otras manifestaciones en la piel, y úlceras bucales.</li>
+          <li>Migrañas y dolores de cabeza.</li>
+          <li>Cambios en el estado de ánimo: irritabilidad, depresión o desánimo.</li>
+          <li>Infertilidad y abortos de repetición.</li>
+        </ul>
+        <p class="note">Los síntomas varían mucho de una persona a otra. Hay quien no tiene apenas síntomas.</p>
+      </article>
+      <article class="info">
+        <h3>¿Cómo se diagnostica?</h3>
+        <ul>
+          <li><b>Analítica:</b> detecta si hay anticuerpos específicos en sangre.</li>
+          <li><b>Pruebas genéticas:</b> indican si existe predisposición a la enfermedad.</li>
+          <li><b>Biopsia intestinal:</b> es la prueba más significativa, porque muestra si hay daño en el intestino.</li>
+        </ul>
+        <p class="note"><b>Importante:</b> no retires el gluten de la dieta antes de hacerte las pruebas. Podría alterar los resultados. Consulta siempre con tu médico.</p>
+      </article>
+      <article class="info">
+        <h3>¿Cuál es su tratamiento?</h3>
+        <p>No tiene cura. El único tratamiento es una <b>dieta sin gluten estricta y de por vida</b>.</p>
+        <p>Con ella, los síntomas y los análisis se normalizan en el primer año, y el intestino se repara en 2 a 5 años. Por eso es necesario un <b>control médico periódico</b>.</p>
+        <div class="alert"><span class="emoji" aria-hidden="true">⚠️</span><span><b>Mucho cuidado con la contaminación cruzada</b> y con la limpieza de los utensilios de cocina. Una cantidad mínima de gluten ya hace daño.</span></div>
+      </article>
+        </div>
+        <div class="stack-nav" aria-hidden="true"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== ¿QUÉ PUEDO COMER? ========== -->
+<section class="food" id="alimentos">
+  <div class="wrap">
+    <div class="center reveal">
+      <p class="eyebrow">En la cocina y en la compra</p>
+      <h2>¿Qué alimentos <span class="script">puedo consumir?</span></h2>
+      <p class="lead">Antes de consumir cualquier alimento, ten en cuenta esta clasificación.</p>
+    </div>
+
+    <div class="food-grid">
+      <div class="fcard f-ok reveal">
+        <span class="badge">✓ Aptos</span>
+        <h3>Genéricos</h3>
+        <p>Por su naturaleza no contienen gluten.</p>
+        <p class="ex">Fruta, verdura, carne, pescado, huevos, legumbres…</p>
+      </div>
+      <div class="fcard f-warn reveal">
+        <span class="badge">! Precaución</span>
+        <h3>Convencionales</h3>
+        <p>No llevan gluten como ingrediente, pero pueden contenerlo por su proceso de elaboración y manipulación.</p>
+        <p class="ex">Embutidos, chocolates…</p>
+      </div>
+      <div class="fcard f-spec reveal">
+        <span class="badge">★ Específicos</span>
+        <h3>Sin gluten</h3>
+        <p>Dirigidos expresamente a las personas celíacas y elaborados con cereales sin gluten.</p>
+        <p class="ex">Pan, pasta y harinas «sin gluten»</p>
+      </div>
+      <div class="fcard f-no reveal">
+        <span class="badge">✕ No aptos</span>
+        <h3>No aptos</h3>
+        <p>Alimentos procesados que no indican la ausencia de gluten con la espiga barrada o la marca de garantía de FACE.</p>
+      </div>
+    </div>
+
+    <div class="symbols">
+      <div class="intro reveal">
+        <h3>¿Cómo identificar los productos sin gluten?</h3>
+        <p>Lee bien el etiquetado e identifica los símbolos que garanticen la ausencia de gluten.</p>
+      </div>
+      <div class="sym reveal">
+        <div class="mark"><img loading="lazy" decoding="async" src="controlado-face.png" alt="Marca de garantía Controlado por FACE" width="64" height="64" style="width:64px;height:64px;object-fit:contain"></div>
+        <div>
+          <h4>Controlado por FACE</h4>
+          <p>Símbolo de garantía de FACE, que acredita un nivel de gluten inferior a 10 ppm.</p>
+        </div>
+      </div>
+      <div class="sym reveal">
+        <div class="mark"><img loading="lazy" decoding="async" src="espiga-barrada.png" alt="Símbolo de la Espiga Barrada" width="64" height="64" style="width:64px;height:64px;object-fit:contain"></div>
+        <div>
+          <h4>Espiga Barrada</h4>
+          <p>Acreditación europea que establece niveles de gluten por debajo de 20 ppm.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="cross">
+      <div class="nocont reveal">
+        <div class="script">No me contamines</div>
+        <p>La contaminación cruzada es una de las causas más frecuentes de exposición al gluten. Con unos pocos hábitos en casa se evita.</p>
+      </div>
+      <div class="tips reveal">
+        <h3>En casa, sin riesgos</h3>
+        <ul>
+          <li>Evita compartir utensilios</li>
+          <li>Usa tostadora y tabla de cortar propias</li>
+          <li>Limpia bien las superficies antes de cocinar</li>
+          <li>Lávate las manos antes de cocinar</li>
+          <li>Cocina primero lo sin gluten</li>
+          <li>Utiliza agua de cocción limpia</li>
+          <li>No frías en aceite usado para rebozados</li>
+          <li>Protege los alimentos en el horno</li>
+          <li>Ten botes de mantequilla y mermelada aparte</li>
+          <li>Guarda los productos sin gluten separados</li>
+          <li>Sirve primero a la persona celíaca</li>
+          <li>Ante la duda, no arriesgues</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== QUÉ HACEMOS ========== -->
+<section class="activities" id="actividades">
+  <div class="wrap">
+    <div class="reveal">
+      <p class="eyebrow">Qué hacemos</p>
+      <h2>Concienciar, <span class="script">acompañar y compartir</span></h2>
+      <p class="lead">Organizamos actividades durante todo el año. Las fechas y novedades las publicamos en nuestras redes.</p>
+    </div>
+    <div class="grid4">
+      <div class="card reveal">
+        <div class="icon"><svg viewBox="0 0 24 24"><path d="M3 21h18M5 21V10l7-5 7 5v11M9 21v-6h6v6"/></svg></div>
+        <h3>Ayuntamientos Amigos</h3>
+        <p>Reconocemos a los municipios que se comprometen con las personas celíacas, como Segovia o Santa María la Real de Nieva.</p>
+      </div>
+      <div class="card reveal">
+        <div class="icon"><svg viewBox="0 0 24 24"><path d="M2 7l10-4 10 4-10 4L2 7z"/><path d="M6 9v5c0 1.7 2.7 3 6 3s6-1.3 6-3V9"/></svg></div>
+        <h3>En el cole</h3>
+        <p>Charlas y materiales para que niños, docentes y comedores escolares conozcan la celiaquía.</p>
+      </div>
+      <div class="card reveal">
+        <div class="icon"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M16 3v4M8 3v4M3 10h18"/></svg></div>
+        <h3>Mayo, mes celíaco</h3>
+        <p>Jornadas, charlas con especialistas y acciones de sensibilización en torno al Día Nacional del Celíaco.</p>
+      </div>
+      <div class="card reveal">
+        <div class="icon"><svg viewBox="0 0 24 24"><path d="M3 9l2-5h14l2 5"/><path d="M3 9c0 1.4 1 2.5 2.25 2.5S7.5 10.4 7.5 9c0 1.4 1 2.5 2.25 2.5S12 10.4 12 9c0 1.4 1 2.5 2.25 2.5S16.5 10.4 16.5 9c0 1.4 1 2.5 2.25 2.5S21 10.4 21 9"/><path d="M5 11.5V20h14v-8.5"/><path d="M9 20v-4.5a1.5 1.5 0 0 1 1.5-1.5h3a1.5 1.5 0 0 1 1.5 1.5V20"/><path d="M9.5 4l-1 5M14.5 4l1 5"/></svg></div>
+        <h3>Ferias y excursiones</h3>
+        <p>Ferias de alimentación sin gluten, excursiones y encuentros donde comer tranquilos y conocernos.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== NOVEDADES (INSTAGRAM) ========== -->
+<section class="news" id="novedades">
+  <div class="wrap">
+    <div class="news-head reveal">
+      <div>
+        <p class="eyebrow">Novedades</p>
+        <h2>Lo último <span class="script">en Instagram</span></h2>
+      </div>
+      <a href="https://www.instagram.com/segoviasingluten" target="_blank" rel="noopener" class="btn btn-primary">Ver todo en Instagram</a>
+    </div>
+
+    <!-- ===== WIDGET DE INSTAGRAM (Behold) ===== -->
+    <div class="feed-widget reveal">
+      <behold-widget feed-id="HxvLLcl8tTn7m1o5umOv"></behold-widget>
+      <script>
+        (() => {
+          if(window._bhldScript)return;window._bhldScript=true;
+          const d=document,s=d.createElement("script");s.type="module";
+          s.src="https://w.behold.so/widget.js";setTimeout(()=>{d.head.append(s);},0);
+        })();
+      </script>
+    </div>
+    <!-- ===== FIN DEL WIDGET ===== -->
+    <div class="follow reveal">
+      <p class="eyebrow">Síguenos en redes</p>
+      <div class="socials">
+        <a class="social" href="https://www.instagram.com/segoviasingluten" target="_blank" rel="noopener">
+          <img loading="lazy" decoding="async" class="app-icon" src="instagram.png" alt="Instagram" width="52" height="52">
+          <div><b>Instagram</b><span>@segoviasingluten</span></div>
+        </a>
+        <a class="social" href="https://www.tiktok.com/@segoviasingluten" target="_blank" rel="noopener">
+          <img loading="lazy" decoding="async" class="app-icon" src="tiktok.png" alt="TikTok" width="52" height="52">
+          <div><b>TikTok</b><span>@segoviasingluten</span></div>
+        </a>
+        <a class="social" href="https://www.facebook.com/SegoviaSinGluten/" target="_blank" rel="noopener">
+          <img loading="lazy" decoding="async" class="app-icon" src="facebook.png" alt="Facebook" width="52" height="52">
+          <div><b>Facebook</b><span>Segovia Sin Gluten</span></div>
+        </a>
+        <a class="social" href="https://x.com/SG_SinGluten" target="_blank" rel="noopener">
+          <img loading="lazy" decoding="async" class="app-icon" src="x.png" alt="X (Twitter)" width="52" height="52">
+          <div><b>X (Twitter)</b><span>@SG_SinGluten</span></div>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== HAZTE SOCIO ========== -->
+<section class="join" id="socios">
+  <div class="wrap">
+    <div class="box reveal">
+      <div>
+        <p class="eyebrow" style="color:var(--rosa)">Hazte socio</p>
+        <h2>Cuantos más seamos, <span class="script">más lejos llegamos</span></h2>
+        <ul>
+          <li>Precios especiales en excursiones y actividades</li>
+          <li>Información y acompañamiento tras el diagnóstico</li>
+          <li>Formar parte de la voz de los celíacos en Segovia</li>
+        </ul>
+        <a href="https://docs.google.com/forms/d/13o7aeWpCEbSXlIzFmKKn92fOshm3VAGQGEaR5iSLMt0/viewform" class="btn btn-mostaza" target="_blank" rel="noopener">Quiero hacerme socio</a>
+      </div>
+      <div class="badge-box">
+        <div class="script">Unirse es el inicio</div>
+        <p style="margin-top:10px;opacity:.85">Rellena el formulario o escríbenos por WhatsApp y te contamos toda la información y la cuota vigente.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== COLABORADORES ========== -->
+<section class="partners">
+  <div class="wrap">
+    <div class="reveal">
+      <h2 class="thanks"><span class="script">Gracias</span></h2>
+      <p class="lead" style="margin:0 auto">A todas las personas, empresas e instituciones que hacen posible nuestro trabajo.</p>
+    </div>
+    <h3 class="sub-title">Socios colaboradores</h3>
+    <!-- Para añadir un socio colaborador: copia una línea <li class="logo-box">Nombre</li>
+         (si tiene logo, pon dentro <img src="logo.png" alt="Nombre">). Están en orden alfabético. -->
+    <div class="marquee reveal" aria-label="Socios colaboradores">
+      <ul class="marquee-track">
+        <li class="logo-box">Agencia Funeraria Santa Teresa</li>
+        <li class="logo-box">Bartolomé Peromingo</li>
+        <li class="logo-box">Café Bar Vanessa</li>
+        <li class="logo-box">Campesana</li>
+        <li class="logo-box">Centro de Negocios Exitus</li>
+        <li class="logo-box">Dulce Tentación</li>
+        <li class="logo-box">El Pinar Berries</li>
+        <li class="logo-box">Hotel Vizcaínos</li>
+        <li class="logo-box">Huercasa</li>
+        <li class="logo-box">Innoporc</li>
+        <li class="logo-box">La Cocina de Vanesa</li>
+        <li class="logo-box">La Criba de Valseca</li>
+        <li class="logo-box">La Dula de las Mesetas</li>
+        <li class="logo-box">La Tienduca</li>
+        <li class="logo-box">Masa con Alma</li>
+        <li class="logo-box">Onzas de Sabor</li>
+        <li class="logo-box">Patatas Tarsa</li>
+        <li class="logo-box">Rico Libros</li>
+        <li class="logo-box">Segofre</li>
+        <li class="logo-box">Serpasyon</li>
+        <li class="logo-box">Tabladillo</li>
+        <li class="logo-box">Tonos Peluquería y Estética</li>
+        <li class="logo-box">Unmei Comunicación</li>
+      </ul>
+    </div>
+    <p class="marquee-hint">Pasa el ratón y usa la rueda para avanzar más rápido</p>
+    <h3 class="sub-title">Ayuntamientos amigos</h3>
+    <div class="friends reveal">
+      <span>Segovia</span>
+      <span>Santa María la Real de Nieva</span>
+    </div>
+    <h3 class="sub-title">Con el apoyo de</h3>
+    <div class="friends reveal">
+      <span>Diputación de Segovia</span>
+    </div>
+  </div>
+</section>
+
+<!-- ========== CONTACTO ========== -->
+<section class="contact" id="contacto">
+  <div class="wrap">
+    <div class="reveal">
+      <p class="eyebrow">Contacto</p>
+      <h2>¿Tienes alguna duda <span class="script">o quieres saber más?</span></h2>
+      <p class="lead">Escríbenos sin compromiso: dudas tras un diagnóstico, propuestas de colaboración o si quieres que vayamos a tu colegio o ayuntamiento.</p>
+      <ul class="clist">
+        <li>
+          <div class="icon"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></div>
+          <div><small>Email</small><a href="mailto:segoviasingluten@gmail.com">segoviasingluten@gmail.com</a></div>
+        </li>
+        <li>
+          <div class="icon"><svg viewBox="0 0 24 24"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg></div>
+          <div><small>WhatsApp</small><a href="https://wa.me/34604915177" target="_blank" rel="noopener">604 915 177</a></div>
+        </li>
+        <li>
+          <div class="icon"><svg viewBox="0 0 24 24"><path d="M12 21s-7-6.2-7-12a7 7 0 0 1 14 0c0 5.8-7 12-7 12z"/><circle cx="12" cy="9" r="2.5"/></svg></div>
+          <div><small>Centro de Negocios Exitus-Segovia</small><a href="https://www.google.com/maps/search/?api=1&query=Paseo+Ezequiel+Gonz%C3%A1lez+32+Segovia" target="_blank" rel="noopener">Paseo Ezequiel González, 32 · Segovia</a></div>
+        </li>
+      </ul>
+      <div class="ctas">
+      <a href="https://docs.google.com/forms/d/13o7aeWpCEbSXlIzFmKKn92fOshm3VAGQGEaR5iSLMt0/viewform" target="_blank" rel="noopener" class="btn btn-primary">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M8 13h8M8 17h5"/></svg>
+        Formulario de contacto
+      </a>
+      <a href="https://wa.me/34604915177" target="_blank" rel="noopener" class="btn btn-wa">
+        <svg viewBox="0 0 24 24" fill="#fff"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.3-.5.1-1 .1-1.7-.1-.4-.1-.9-.3-1.5-.6-2.7-1.2-4.4-3.9-4.6-4.1-.1-.2-1.1-1.5-1.1-2.8 0-1.3.7-2 1-2.3.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .5l-.3.5-.4.4c-.1.1-.3.3-.1.6.2.3.7 1.2 1.5 1.9 1 .9 1.9 1.2 2.2 1.3.3.1.4.1.6-.1l.8-1c.2-.3.4-.2.6-.1l1.9.9c.3.1.5.2.5.3.1.2.1.7-.2 1.2z"/></svg>
+        WhatsApp
+      </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span>© <span id="y"></span> Segovia Sin Gluten · Asociación sin ánimo de lucro · Con la colaboración de la Diputación de Segovia</span>
+    <nav>
+      <a href="#aviso-legal" data-legal="aviso-legal">Aviso legal</a>
+      <a href="#privacidad" data-legal="privacidad">Privacidad</a>
+      <a href="#cookies" data-legal="cookies">Cookies</a>
+    </nav>
+  </div>
+</footer>
+
+
+<!-- ========== TEXTOS LEGALES ==========
+     Pendiente de completar: [Nº DE REGISTRO] y revisión final por la abogada. -->
+<dialog class="legal" id="aviso-legal" aria-labelledby="t-aviso">
+  <button class="legal-close" type="button" aria-label="Cerrar">×</button>
+  <h2 id="t-aviso">Aviso legal</h2>
+  <p class="legal-date">Última actualización: octubre de 2026</p>
+  <h3>1. Titular de la web</h3>
+  <p>En cumplimiento del artículo 10 de la Ley 34/2002, de Servicios de la Sociedad de la Información y de Comercio Electrónico (LSSI-CE), se informa de los datos del titular de este sitio web:</p>
+  <ul>
+    <li><b>Titular:</b> Asociación Segovia Sin Gluten</li>
+    <li><b>CIF:</b> G44918761</li>
+    <li><b>Domicilio:</b> Paseo Ezequiel González, 32. 40002 Segovia (España)</li>
+    <li><b>Email:</b> segoviasingluten@gmail.com</li>
+    <li><b>Teléfono:</b> 604 915 177</li>
+    <li><b>Inscripción:</b> Registro de Asociaciones de Castilla y León, n.º [Nº DE REGISTRO]</li>
+  </ul>
+  <h3>2. Objeto</h3>
+  <p>Esta web tiene como finalidad dar a conocer la asociación, sus actividades y ofrecer información general sobre la enfermedad celíaca y la alimentación sin gluten. El acceso es gratuito y no requiere registro.</p>
+  <h3>3. Información sanitaria</h3>
+  <p>Los contenidos sobre la enfermedad celíaca son de carácter divulgativo y no sustituyen en ningún caso el diagnóstico, consejo o tratamiento de un profesional sanitario. Ante cualquier duda sobre tu salud, consulta con tu médico.</p>
+  <h3>4. Propiedad intelectual e industrial</h3>
+  <p>Los textos, el logotipo, el diseño y las fotografías de esta web pertenecen a la Asociación Segovia Sin Gluten o se utilizan con autorización de sus titulares. Queda prohibida su reproducción con fines comerciales sin autorización expresa. Las marcas «Espiga Barrada» y «Controlado por FACE» pertenecen a sus respectivos titulares y se muestran solo con fines informativos.</p>
+  <h3>5. Enlaces externos</h3>
+  <p>Esta web contiene enlaces a sitios de terceros (redes sociales, formularios de Google, WhatsApp, entidades colaboradoras). La asociación no se responsabiliza de los contenidos ni de las políticas de privacidad de dichos sitios.</p>
+  <h3>6. Responsabilidad</h3>
+  <p>La asociación procura que la información publicada sea correcta y esté actualizada, pero no garantiza la ausencia de errores ni se hace responsable de los daños derivados del uso de la información de esta web.</p>
+  <h3>7. Legislación aplicable</h3>
+  <p>Este aviso legal se rige por la legislación española. Para cualquier controversia, las partes se someten a los juzgados y tribunales de Segovia, salvo que la ley disponga otra cosa.</p>
+</dialog>
+
+<dialog class="legal" id="privacidad" aria-labelledby="t-priv">
+  <button class="legal-close" type="button" aria-label="Cerrar">×</button>
+  <h2 id="t-priv">Política de privacidad</h2>
+  <p class="legal-date">Última actualización: octubre de 2026</p>
+  <h3>1. Responsable del tratamiento</h3>
+  <p>Asociación Segovia Sin Gluten · CIF G44918761 · Paseo Ezequiel González, 32, 40002 Segovia · segoviasingluten@gmail.com · 604 915 177.</p>
+  <h3>2. ¿Recoge datos esta web?</h3>
+  <p>Esta web <b>no recoge datos personales directamente</b>: no tiene formularios propios, registro de usuarios ni tienda. Los datos solo se facilitan cuando tú decides contactar con nosotros por alguno de estos medios:</p>
+  <ul>
+    <li><b>Formulario de socios y contacto (Google Forms):</b> los datos que introduces se tratan conforme a la Política de Privacidad y Protección de Datos de Socios/Donantes que se muestra y acepta en el propio formulario.</li>
+    <li><b>Email o WhatsApp:</b> utilizaremos tus datos únicamente para responder a tu consulta. La base jurídica es tu consentimiento, al ponerte en contacto con nosotros.</li>
+  </ul>
+  <h3>3. Conservación</h3>
+  <p>Los datos de las consultas se conservan el tiempo necesario para atenderlas. Los de socios, durante los plazos indicados en la política del formulario.</p>
+  <h3>4. Destinatarios y servicios de terceros</h3>
+  <p>No cedemos tus datos a terceros salvo obligación legal. Para el funcionamiento de la web y los canales de contacto utilizamos estos proveedores, algunos de los cuales pueden tratar datos fuera de la Unión Europea con las garantías previstas en el RGPD (como el Marco de Privacidad de Datos UE-EE. UU. o cláusulas contractuales tipo):</p>
+  <ul>
+    <li><b>Google</b> (Google Forms y Google Fonts).</li>
+    <li><b>WhatsApp / Meta</b> (mensajería).</li>
+    <li><b>Behold</b> (muestra nuestras publicaciones de Instagram).</li>
+    <li><b>[Proveedor de alojamiento web]</b>, que puede registrar datos técnicos de las visitas, como la dirección IP, por motivos de seguridad.</li>
+  </ul>
+  <h3>5. Tus derechos</h3>
+  <p>Puedes ejercer tus derechos de acceso, rectificación, supresión, oposición, limitación, portabilidad y retirada del consentimiento escribiendo a <b>segoviasingluten@gmail.com</b> o por correo postal a la dirección indicada, acreditando tu identidad.</p>
+  <p>Si consideras que no hemos tratado tus datos correctamente, puedes presentar una reclamación ante la <b>Agencia Española de Protección de Datos</b> (www.aepd.es · C/ Jorge Juan, 6, 28001 Madrid).</p>
+  <h3>6. Normativa</h3>
+  <p>Reglamento (UE) 2016/679 (RGPD) y Ley Orgánica 3/2018 de Protección de Datos Personales y garantía de los derechos digitales (LOPDGDD).</p>
+</dialog>
+
+<dialog class="legal" id="cookies" aria-labelledby="t-cook">
+  <button class="legal-close" type="button" aria-label="Cerrar">×</button>
+  <h2 id="t-cook">Política de cookies</h2>
+  <p class="legal-date">Última actualización: octubre de 2026</p>
+  <h3>¿Qué son las cookies?</h3>
+  <p>Son pequeños archivos que algunas webs guardan en tu dispositivo para recordar información sobre tu visita.</p>
+  <h3>¿Usa cookies esta web?</h3>
+  <p><b>Esta web no utiliza cookies propias ni cookies de análisis, publicidad o seguimiento.</b> Por eso no te pedimos consentimiento al entrar.</p>
+  <p>Algunos elementos se cargan desde servicios externos (tipografías de Google Fonts y el feed de Instagram de Behold). Según sus proveedores, no instalan cookies, aunque necesitan conocer tu dirección IP para enviarte el contenido.</p>
+  <h3>Enlaces a otras webs</h3>
+  <p>Al pulsar en los enlaces a Instagram, Facebook, TikTok, X, WhatsApp o Google Forms, sales de esta web. Esos sitios pueden usar sus propias cookies, que se rigen por sus políticas.</p>
+  <h3>Cómo gestionar las cookies</h3>
+  <p>Puedes ver y borrar las cookies desde la configuración de tu navegador (Chrome, Safari, Firefox, Edge…).</p>
+  <h3>Cambios</h3>
+  <p>Si en el futuro incorporamos cookies que requieran tu consentimiento, actualizaremos esta política y añadiremos el aviso correspondiente.</p>
+</dialog>
+
+<a class="wa-float" href="https://wa.me/34604915177" target="_blank" rel="noopener" aria-label="Escríbenos por WhatsApp">
+  <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.3-.5.1-1 .1-1.7-.1-.4-.1-.9-.3-1.5-.6-2.7-1.2-4.4-3.9-4.6-4.1-.1-.2-1.1-1.5-1.1-2.8 0-1.3.7-2 1-2.3.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .5l-.3.5-.4.4c-.1.1-.3.3-.1.6.2.3.7 1.2 1.5 1.9 1 .9 1.9 1.2 2.2 1.3.3.1.4.1.6-.1l.8-1c.2-.3.4-.2.6-.1l1.9.9c.3.1.5.2.5.3.1.2.1.7-.2 1.2z"/></svg>
+</a>
+
+<script>
+// Fichas de "Todo lo que necesitas saber": carrusel horizontal que avanza con el scroll.
+  // Cada ficha se queda un momento centrada y ampliada antes de pasar a la siguiente.
+  (function(){
+    const wrap=document.querySelector('.stack-scroll'); if(!wrap) return;
+    const sticky=wrap.querySelector('.stack-sticky');
+    const stack=wrap.querySelector('.stack');
+    const cards=[...stack.querySelectorAll('.info')];
+    const nav=wrap.querySelector('.stack-nav'); nav.innerHTML=cards.map(()=>'<span></span>').join('');
+    const dots=[...nav.querySelectorAll('span')];
+    const n=cards.length, STEP=0.9; // pantallas de scroll por ficha
+    let fit=1;
+    function layout(){
+      cards.forEach(c=>c.style.height='');
+      const h=Math.max(...cards.map(c=>c.offsetHeight));
+      cards.forEach(c=>c.style.height=h+'px');             // todas iguales
+      const avail=window.innerHeight-84-110;               // espacio libre bajo la cabecera
+      fit=Math.max(0.55,Math.min(1,avail/(h+40)));         // si no cabe, se reduce para que quepa
+      stack.style.height=((h+40)*fit)+'px';
+      wrap.style.height=(sticky.offsetHeight+(n-1)*window.innerHeight*STEP)+'px';
+      update();
+    }
+    function ease(f){                                      // pausa con la ficha centrada
+      const a=0.22,b=0.78; if(f<=a) return 0; if(f>=b) return 1;
+      const x=(f-a)/(b-a); return x*x*(3-2*x);
+    }
+    function update(){
+      const r=wrap.getBoundingClientRect();
+      const total=wrap.offsetHeight-sticky.offsetHeight;
+      const raw=total>0?Math.min(Math.max(-r.top/total,0),1)*(n-1):0;
+      const base=Math.min(Math.floor(raw),n-2), p=raw>=n-1?n-1:base+ease(raw-base);
+      const w=cards[0].offsetWidth, gapX=w*0.92+24;
+      cards.forEach((c,i)=>{
+        const d=i-p, a=Math.min(Math.abs(d),1.4);
+        const s=(1-Math.min(Math.abs(d),1)*0.22)*fit;      // la ficha central se amplía
+        c.style.transform=`translate(-50%,-50%) translateX(${d*gapX*fit}px) scale(${s})`;
+        c.style.opacity=String(Math.max(0,1-a*0.55));
+        c.style.zIndex=String(100-Math.round(Math.abs(d)*10));
+        const on=Math.round(p)===i; c.classList.toggle('active',on);
+        c.style.pointerEvents=on?'auto':'none';
+      });
+      const cur=Math.round(p); dots.forEach((s,i)=>s.classList.toggle('on',i===cur));
+    }
+    window.addEventListener('scroll',update,{passive:true});
+    window.addEventListener('resize',layout);
+    window.addEventListener('load',layout);
+    if(document.fonts) document.fonts.ready.then(layout);
+    layout();
+  })();
+  // Carrusel de socios: avanza solo; con la rueda del ratón encima va más rápido
+  (function(){
+    const box=document.querySelector('.marquee'); if(!box) return;
+    const track=box.querySelector('.marquee-track');
+    track.innerHTML += track.innerHTML; // duplicado para que el bucle sea continuo
+    track.querySelectorAll('li').forEach((li,i,a)=>{ if(i>=a.length/2) li.setAttribute('aria-hidden','true'); });
+    const reduce=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    let speed=reduce?0:0.5, boost=0, pos=0, last=performance.now(), dragging=false;
+    function half(){ return track.scrollWidth/2; }
+    function loop(now){
+      const dt=Math.min(now-last,50); last=now;
+      if(!dragging){
+        pos += (speed + boost) * dt/16;
+        boost *= 0.92;
+        const h=half(); if(pos>=h) pos-=h; if(pos<0) pos+=h;
+        box.scrollLeft=pos;
+      }
+      requestAnimationFrame(loop);
+    }
+    box.addEventListener('wheel',e=>{
+      const d=Math.abs(e.deltaY)>Math.abs(e.deltaX)?e.deltaY:e.deltaX;
+      if(!d) return; e.preventDefault(); boost += d*0.15;
+    },{passive:false});
+    // en móvil se puede arrastrar con el dedo
+    box.addEventListener('touchstart',()=>{dragging=true;},{passive:true});
+    box.addEventListener('touchend',()=>{dragging=false;pos=box.scrollLeft;},{passive:true});
+    requestAnimationFrame(loop);
+  })();
+// Textos legales: se abren en una ventana (también con enlaces tipo #privacidad)
+  (function(){
+    const open=id=>{const d=document.getElementById(id); if(d&&d.showModal&&!d.open){d.showModal();}};
+    document.querySelectorAll('[data-legal]').forEach(a=>a.addEventListener('click',e=>{e.preventDefault();open(a.dataset.legal);}));
+    document.querySelectorAll('dialog.legal').forEach(d=>{
+      d.querySelector('.legal-close').addEventListener('click',()=>d.close());
+      d.addEventListener('click',e=>{ if(e.target===d) d.close(); });
+    });
+    const h=location.hash.slice(1); if(['aviso-legal','privacidad','cookies'].includes(h)) open(h);
+  })();
+  document.getElementById('y').textContent = new Date().getFullYear();
+  if ('IntersectionObserver' in window) {
+    const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } }), { threshold: .1 });
+    document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+  } else {
+    document.querySelectorAll('.reveal').forEach(el => el.classList.add('in'));
+  }
+</script>
+</body>
+</html>
